@@ -44,3 +44,15 @@ function animateText() {
 }
 
 animateText();
+
+var button = document.querySelector('.modern-button');
+
+button.addEventListener('mouseenter', function() {
+  button.style.animation = 'pulse .5s ease-in-out';
+  button.style.backgroundColor = "red";
+});
+
+button.addEventListener('mouseleave', function() {
+  button.style.animation = 'none';
+});
+

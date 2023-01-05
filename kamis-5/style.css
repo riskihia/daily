@@ -20,6 +20,9 @@
   }
 
 .modern-button{
+    position: absolute;
+    top: 20%;
+    left: 20%;
     display: inline-block;
   font-size: 16px;
   font-weight: 600;
@@ -35,17 +38,18 @@
 .modern-button:hover {
     /* background-color: #444; */
     background-color: #2980b9;
+    /* transform: scale(1.1); */
 }
   
 .modern-button:active{
     /* background-color: #555; */
     background-color: #2980b9;
+    /* transform: scale(0.9); */
 }
   
 .modern-button:focus{
     outline: none;
 }
-  
 
 
 #typing-text {
@@ -53,4 +57,21 @@
     font-weight: 600;
     color: #333;
   }
-  
+
+
+@keyframes pulse{
+	0%{
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+	}
+
+	70%{
+		transform: scale(1);
+		box-shadow: 0 0 0 50px rgba(0, 0, 0, 0);
+	}
+
+	100%{
+		transform: scale(1);
+		box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+	}
+}
