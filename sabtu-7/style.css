@@ -1,0 +1,14 @@
+#carousel{
+    position: relative;
+    width: 45%;
+}
+.slide img{
+    box-shadow: 5px 10px 2px grey;
+}
+
+.next{
+    padding: 10px 20px;
+    position: absolute;
+    right: 0;
+    top: 50%;
+}

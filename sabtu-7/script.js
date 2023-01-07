@@ -48,3 +48,22 @@ prev.addEventListener("click", function(){
     }
     gambar.src = namaGambar[currentSlide];
 });
+
+document.addEventListener("keydown", function(event) {
+    if(event.key == "ArrowRight"){
+        currentSlide++;
+        if(currentSlide == 3){
+            currentSlide = 0;
+        }
+        gambar.src = namaGambar[currentSlide];
+    }
+    // console.log("Keyboard button pressed: ", event.key);
+    if(event.key == "ArrowLeft"){
+        currentSlide--;
+        if(currentSlide < 0){
+            currentSlide = 2;
+        }
+        gambar.src = namaGambar[currentSlide];
+        }
+  });
+  
